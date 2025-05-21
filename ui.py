@@ -9,7 +9,7 @@ uploaded = st.file_uploader("Upload a transcript (.txt)", type=["txt"])
 if uploaded:
     transcript = uploaded.read().decode("utf-8")
     st.subheader("Preview of Transcript")
-    st.text_area("", transcript, height=200)
+    st.text_area("transcript preview", transcript, height=200)
     
     if st.button("Generate Summary & Actions"):
         with st.spinner("Calling the LLM…"):
