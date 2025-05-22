@@ -12,9 +12,11 @@ This project is a web app that processes meeting or press conference transcripts
 
 # Running Instructions
 
+    Confirm requirements with pip install -r requirements.txt
+
 1. Create virtual environment: source venv/bin/activate
 
-2. Start backend: uvicorn app: app --reload
+2. Start backend: uvicorn app:app --reload
 
 3. Launch frontend: streamlit run ui.py
 
